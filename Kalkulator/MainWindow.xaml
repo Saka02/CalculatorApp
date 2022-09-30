@@ -1,0 +1,46 @@
+﻿<Window x:Class="Kalkulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kalkulator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1300" Width="800">
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="Label" Content="0" FontSize="200" HorizontalAlignment="Right" Grid.ColumnSpan="4" VerticalAlignment="Bottom" />
+        <Button Click="Button_Click" Grid.Column="0" Grid.Row="1" Margin="15" Content="AC" FontSize="60"/>
+        <Button Grid.Column="1" Grid.Row="1" Margin="15" Content="+/-" x:Name="Negativan" FontSize="60"/>
+        <Button Grid.Column="2" Grid.Row="1" Margin="15" Content="%" x:Name="percent" FontSize="60"/>
+        <Button Grid.Column="3" Grid.Row="1" Margin="15" Content="/" Click="Button_Click_2" x:Name="divide" Foreground="White" Background="Orange" FontSize="60"/>
+        <Button Grid.Column="0" Grid.Row="2" Margin="15" Content="7" FontSize="60"  Click="Button_Click_1" x:Name="sedam" />
+        <Button Grid.Column="1" Grid.Row="2" Margin="15" Content="8" FontSize="60"  Click="Button_Click_1" x:Name="osam" />
+        <Button Grid.Column="2" Grid.Row="2" Margin="15" Content="9" FontSize="60"  Click="Button_Click_1" x:Name="devet" />
+        <Button Grid.Column="3" Grid.Row="2" Margin="15" Content="*" Click="Button_Click_2" x:Name="multiply" Foreground="White" Background="Orange" FontSize="60"/>
+        <Button Grid.Column="0" Grid.Row="3" Margin="15" Content="4" FontSize="60"  Click="Button_Click_1" x:Name="cetiri" />
+        <Button Grid.Column="1" Grid.Row="3" Margin="15" Content="5" FontSize="60"  Click="Button_Click_1" x:Name="pet" />
+        <Button Grid.Column="2" Grid.Row="3" Margin="15" Content="6" FontSize="60"  Click="Button_Click_1" x:Name="sest" />
+        <Button Grid.Column="3" Grid.Row="3" Margin="15" Content="+" Click="Button_Click_2" x:Name="add" Foreground="White" Background="Orange" FontSize="60"/>
+        <Button Grid.Column="0" Grid.Row="4" Margin="15" Content="1" FontSize="60"  Click="Button_Click_1" x:Name="jedan" />
+        <Button Grid.Column="1" Grid.Row="4" Margin="15" Content="2"  Click="Button_Click_1" x:Name="dva" FontSize="60"/>
+        <Button Grid.Column="2" Grid.Row="4" Margin="15" Content="3" Click="Button_Click_1" x:Name="tri" FontSize="60"/>
+        <Button Grid.Column="3" Grid.Row="4" Margin="15" Content="-" Click="Button_Click_2" x:Name="sub" Foreground="White" Background="Orange" FontSize="60"/>
+        <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="5" Margin="15" Content="0"  Click="Button_Click_1" x:Name="nula" FontSize="60"/>
+        <Button Grid.Column="2" Grid.Row="5" Margin="15" Content="." x:Name="point" FontSize="60"/>
+        <Button Grid.Column="3" Grid.Row="5" Margin="15" Content="=" x:Name="equal" Foreground="White" Background="Orange" FontSize="60"/>
+        <Canvas/>
+    </Grid>
+</Window>
